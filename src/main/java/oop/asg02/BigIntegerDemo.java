@@ -19,18 +19,21 @@ public class BigIntegerDemo {
         }
         BigID = init.substring(i); 
     }
-
+    
     public String toString() {
 
         return BigID;
+    //Tra ve bieu dien String cua BigIntegerDemo
     }
-
+    
     public boolean equals(Object other) {
         return toString().equals(other.toString());
+    //Tra ve gia tri boolean True or False cua BigIntegerDemo
     }
-
+    
     public long toLong() {
         return Long.parseLong(BigID);
+    //Tra ve bieu dien kieu long cua BigIntegerDemo
     }
 
     public BigIntegerDemo add(BigIntegerDemo other) {
@@ -58,8 +61,9 @@ public class BigIntegerDemo {
             str1 = String.valueOf(mod);
             str2 = str1 + str2;
         }
-        BigIntegerDemo b = new BigIntegerDemo(str2);
-        return b;
+        BigIntegerDemo BigNew = new BigIntegerDemo(str2);
+        return BigNew;
+        //Tra ve mot doi tuong BigIntegerDemo moi = tong 2 BigInteger
     }
 
     public BigIntegerDemo subtract(BigIntegerDemo other) {
@@ -90,7 +94,8 @@ public class BigIntegerDemo {
             str1 = String.valueOf(x);
             str2 = str1 + str2;
         }
-        BigIntegerDemo big = new BigIntegerDemo(str2);
-        return big;
+        BigIntegerDemo BigNew = new BigIntegerDemo(str2);
+        return BigNew;
+        //Tra ve mot doi tuong BigIntegerDemo moi = hieu 2 BigInteger
     }
 }
